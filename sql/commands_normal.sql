@@ -60,20 +60,20 @@ join color on person.favorite_color_id = color.id;
 
 insert into person (name) values ('Ryan');
 
-Cartesian Product
+-- Cartesian Product
 select person.name, color.name from person, color;
 
 insert into person (name) values ('Dimitri');
 
 delete from person where id = 4;
 
-Outer Join
+-- Outer Join
 select person.name, color.name from person full outer join color on person.favorite_color_id = color.id;
 
-Left Join
+-- Left Join
 select person.name, color.name from person left join color on person.favorite_color_id = color.id;
 
-Right Join
+-- Right Join
 select person.name, color.name from person right join color on person.favorite_color_id = color.id;
 
 select * from person;
